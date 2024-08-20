@@ -1,0 +1,25 @@
+1. Class Definition (Book):
+
+The Book class has two public properties:
+$name: Represents the name of the book, initially set to 'Main Jo Hoon John Elia Hoon'.
+$price: Represents the price of the book, initially set to 960.
+These properties are marked as public, meaning they can be accessed from outside the class and by any instance of the class.
+
+2. Constructor Method (__construct()):
+The __construct() method is a special method in PHP called a constructor. It is automatically called when an object of the class is created.
+In this case, the constructor sets the $name property to 'Main Jo Hoon John Elia Hoon' and the $price property to 960.
+Since the constructor is doing the same thing as the initial property assignments, the explicit property assignments inside the constructor are redundant. However, the constructor is still useful for initializing properties dynamically if needed.
+
+3. Method Definition (getname()):
+The getname() method is a public method that returns the value of the $name property. This method allows you to retrieve the name of the book.
+
+4. Method Definition (getprice()):
+The getprice() method is another public method that returns the value of the $price property. This method allows you to retrieve the price of the book.
+
+5. Object Instantiation:
+An object of the Book class is created using $book = new Book;.
+This triggers the constructor method (__construct()), which initializes the $name and $price properties.
+
+6. Method Invocation:
+The getname() method is called on the $book object using echo $book->getname();. This outputs the book's name: "Main Jo Hoon John Elia Hoon".
+The getprice() method is called on the $book object using echo $book->getprice();. This outputs the book's price: 960.

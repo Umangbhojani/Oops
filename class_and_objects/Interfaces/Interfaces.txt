@@ -1,0 +1,145 @@
+1.Interfaces:
+
+1. Interface Definition (Mobile):
+interface Mobile:
+An interface in PHP defines a contract for classes. It specifies a set of methods that any implementing class must provide.
+The Mobile interface declares two methods:
+public function samsung();: This method must be implemented by any class that implements the Mobile interface.
+public function google();: This method must also be implemented by any class that implements the Mobile interface.
+Interfaces cannot contain any method implementations; they only declare method signatures.
+
+2. Class Implementation (Store):
+class Store implements Mobile:
+
+The Store class implements the Mobile interface, which means it must provide concrete implementations for all the methods declared in the Mobile interface.
+Method Implementations:
+
+public function samsung(): Provides the implementation for the samsung() method. It outputs the string ' samsung : '.
+public function google(): Provides the implementation for the google() method. It outputs the string ' google : '.
+These methods fulfill the contract specified by the Mobile interface.
+
+3. Object Instantiation and Method Calls:
+$obj = new Store;:
+
+An instance of the Store class is created and assigned to the variable $obj.
+$obj->samsung();:
+
+Calls the samsung() method on the $obj instance. This outputs: ' samsung : '.
+$obj->google();:
+
+Calls the google() method on the $obj instance. This outputs: ' google : '.
+
+Summary:
+
+Interface (Mobile):
+
+Defines a set of methods that any implementing class must have.
+It serves as a contract for the classes that implement it.
+
+Class (Store):
+
+Implements the Mobile interface, meaning it provides concrete implementations for all the methods declared by the interface.
+This ensures that the class adheres to the contract specified by the interface.
+Object Interaction:
+
+An instance of the Store class is created, and the methods from the Mobile interface are called, demonstrating how the class adheres to the contract and provides specific functionality.
+
+====================================================================================================================================================================================================
+
+
+
+2.Interfaces_second:
+
+
+1. Interface Definition (Laptop):
+interface Laptop:
+An interface in PHP defines a contract that specifies a set of methods a class must implement. It does not provide implementations for these methods.
+The Laptop interface declares two methods:
+public function mac();: A method that must be implemented by any class that implements the Laptop interface.
+public function windows();: Another method that must be implemented by the class.
+
+2. Class Implementation (Croma):
+class Croma implements Laptop:
+
+The Croma class implements the Laptop interface, which means it must provide concrete implementations for all the methods declared by the Laptop interface.
+Method Implementations:
+
+public function mac(): This method provides an implementation for the mac() method from the Laptop interface. It outputs the string ' mac : '.
+public function windows(): This method provides an implementation for the windows() method from the Laptop interface. It outputs the string ' windows : '.
+By implementing these methods, the Croma class adheres to the contract specified by the Laptop interface.
+
+3. Object Instantiation and Method Calls:
+$b7 = new Croma;:
+
+An instance of the Croma class is created and assigned to the variable $b7.
+$b7->mac();:
+
+Calls the mac() method on the $b7 object. This outputs: ' mac : '.
+$b7->windows();:
+
+Calls the windows() method on the $b7 object. This outputs: ' windows : '.
+
+Summary:
+
+Interface (Laptop):
+
+Defines a contract for classes that implement it, specifying that they must provide implementations for the mac() and windows() methods.
+Interfaces help ensure consistency across different classes by enforcing a common set of methods.
+
+Class (Croma):
+
+Implements the Laptop interface, providing the actual functionality for the methods mac() and windows().
+By implementing these methods, the Croma class meets the requirements set by the Laptop interface.
+Object Interaction:
+
+An instance of the Croma class is created, and the methods mac() and windows() are called, demonstrating how the class adheres to the contract defined by the interface.
+
+
+=============================================================================================================================================================================
+
+3.Interfaces_third:
+
+
+1. Interface Definition (Student):
+interface Student:
+An interface defines a contract for classes. It specifies that any class implementing this interface must provide implementations for the methods declared within the interface.
+The Student interface declares two static methods:
+public static function student1();: A static method that must be implemented by any class that implements the Student interface.
+public static function student2();: Another static method that must be implemented by the class.
+
+
+2. Class Implementation (Std):
+class Std implements Student:
+
+The Std class implements the Student interface, which means it must provide concrete implementations for all static methods declared by the interface.
+Method Implementations:
+
+public static function student1(): Implements the student1() method from the Student interface. This method outputs the string ' student1 : '.
+public static function student2(): Implements the student2() method from the Student interface. This method outputs the string ' student2 : '.
+
+
+3. Static Method Calls:
+Std::class;:
+
+This line of code is actually not doing anything functional in this context. Std::class is used to get the fully qualified name of the class as a string. In this case, it returns 'Std', but it doesn't have any effect or output on its own. It’s likely included by mistake.
+Std::student1();:
+
+Calls the static method student1() on the Std class. This outputs: ' student1 : '.
+Std::student2();:
+
+Calls the static method student2() on the Std class. This outputs: ' student2 : '.
+
+
+Summary:
+
+Interface (Student):
+
+Defines a contract with static methods that must be implemented by any class that adheres to the interface.
+
+Class (Std):
+
+Implements the Student interface and provides concrete implementations for the static methods student1() and student2().
+
+Static Methods:
+
+Static methods belong to the class itself rather than any instance of the class. They are called using the :: syntax on the class name.

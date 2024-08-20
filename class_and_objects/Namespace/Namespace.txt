@@ -1,0 +1,67 @@
+Namespaces and Classes
+
+1.Namespace Definition (suv):
+
+namespace suv;:
+
+This statement declares the beginning of a namespace called suv. All classes, functions, and constants defined after this statement belong to the suv namespace.
+
+class Rangrover:
+
+Defines a class named Rangrover within the suv namespace.
+Properties:
+$name: Set to 'Velar'.
+$price: Set to '8700000'.
+Method (rangrover()):
+Returns a string describing the Range Rover model, including the name and price of the vehicle.
+
+
+2.Namespace Definition (offroad):
+
+namespace offroad;:
+
+This statement declares the beginning of a different namespace called offroad. All classes, functions, and constants defined after this statement belong to the offroad namespace.
+
+class Rangrover:
+
+Defines another class named Rangrover but within the offroad namespace.
+
+Properties:
+$name: Set to 'Defender'.
+$price: Set to '15000000'.
+Method (rangrover()):
+Returns a string describing the Range Rover model, including the name and price of the vehicle.
+
+
+Object Instantiation and Method Calls:
+
+Object from suv Namespace:
+
+$rangrover = new \suv\Rangrover;:
+Creates an instance of the Rangrover class from the suv namespace.
+echo $rangrover->rangrover();:
+Calls the rangrover() method on the suv\Rangrover object. This outputs: ' This is Rang Rover Velar its price is 8700000.'.
+
+Object from offroad Namespace:
+
+$rangrover = new \offroad\Rangrover;:
+Creates an instance of the Rangrover class from the offroad namespace.
+echo $rangrover->rangrover();:
+Calls the rangrover() method on the offroad\Rangrover object. This outputs: ' This is Rang Rover Defender its price is 15000000.'.
+
+Summary:
+
+Namespaces:
+
+Namespaces in PHP are used to group related classes, functions, and constants to avoid naming conflicts. They help organize code and improve readability.
+By using namespaces, you can have multiple classes with the same name in different namespaces.
+
+Classes with Same Name:
+
+In this example, two classes named Rangrover exist in different namespaces. Despite having the same name, they are considered distinct due to their namespaces.
+
+Accessing Namespaced Classes:
+
+To access classes within a namespace, you use the namespace name followed by the class name, e.g., \suv\Rangrover and \offroad\Rangrover.
+This allows you to create instances and call methods on classes from specific namespaces without conflicts.
+Overall, this code showcases how namespaces can help manage and organize classes in a larger application, especially when dealing with multiple classes that might have the same name.

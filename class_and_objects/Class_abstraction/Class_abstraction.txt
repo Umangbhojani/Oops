@@ -1,0 +1,14 @@
+Abstract Class (Product):
+
+The Product class is defined as an abstract class, meaning it cannot be instantiated directly.
+It contains two public properties: $product_name (set to "Oil") and $product_price (set to "100").
+Abstract classes are typically used as base classes for other classes to extend and implement.
+
+Concrete Class (Main):
+
+The Main class extends the Product class, inheriting its properties.
+It defines a method called product() that returns a string, using the inherited properties ($product_name and $product_price) to describe the product.
+Object Instantiation and Method Call:
+
+An object of the Main class is created ($main = new Main;).
+The product() method is called on this object, which outputs the string: "Product name is Oil its price is 100."

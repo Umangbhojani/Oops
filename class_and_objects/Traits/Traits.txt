@@ -1,0 +1,60 @@
+1.Traits Definition
+
+Trait Carr:
+
+trait Carr:
+
+Declares a trait named Carr. Traits in PHP are similar to classes, but they are intended to be used as a means of code reuse rather than as standalone entities.
+Static Properties:
+
+public static $carname: A static property representing the name of the car, set to 'RANG ROVER VELAR'.
+public static $price: A static property representing the price of the car, set to '8700000'.
+Static Method (car()):
+
+public static function car(): A static method that returns a string describing the car’s name and price. It uses self::$carname and self::$price to access the static properties defined in the trait.
+
+2.Trait Colorr:
+
+trait Colorr:
+
+Declares another trait named Colorr.
+
+Static Property:
+
+public static $color: A static property representing the color, set to 'blue'.
+
+Static Method (color()):
+
+public static function color(): A static method that returns a string indicating the color choice. It uses self::$color to access the static property defined in the trait.
+
+3.Class Implementation
+
+
+class Carinfo:
+
+use Colorr, Carr;:
+This statement incorporates the methods and properties from both the Colorr and Carr traits into the Carinfo class. Traits can be used to include multiple sources of functionality into a class.
+
+4.Static Method Calls
+
+echo Carinfo::car();:
+
+Calls the static method car() from the Carr trait, now part of the Carinfo class. This outputs:
+
+echo Carinfo::color();:
+
+Calls the static method color() from the Colorr trait, also part of the Carinfo class. This outputs:
+
+
+4.Summary
+
+Traits:
+
+Traits are used to group functionality in a reusable way. They allow you to include methods and properties into a class without requiring inheritance.
+Traits are particularly useful for code reuse in multiple classes that share common methods or properties.
+Static Properties and Methods:
+
+Both Carr and Colorr traits define static properties and methods. These can be accessed directly using the class name (Carinfo::car() and Carinfo::color()).
+Class (Carinfo):
+
+The Carinfo class uses both traits (Colorr and Carr). It inherits the static methods and properties from these traits, which can then be accessed statically.

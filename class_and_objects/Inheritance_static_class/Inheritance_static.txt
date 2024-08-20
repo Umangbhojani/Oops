@@ -1,0 +1,53 @@
+1. Class Definition (Bike):
+Static Properties:
+
+public static $bikename: A static property representing the bike's name, set to 'ContinentalGT650'.
+public static $price: A static property representing the bike's price, set to '425000'.
+public static $enginecc: A static property representing the bike's engine capacity, set to '648cc'.
+Static properties belong to the class itself, rather than any individual instance of the class.
+
+Static Method (bike()):
+
+This method returns a string that combines the static properties ($bikename, $enginecc, and $price) into a descriptive sentence about the bike.
+self::$bikename and similar expressions are used to access static properties from within the static method.
+
+2. Class Definition (Color):
+Inheritance:
+
+The Color class extends the Bike class, meaning it inherits the static properties and methods from Bike.
+Static Property:
+
+public static $color: A static property specific to the Color class, representing the color of the bike, set to 'chrome'.
+Static Method (color()):
+
+This method returns a string indicating the color of the bike, using the static property $color from the Color class.
+
+3. Method Calls:
+Color::color():
+
+Calls the color() method from the Color class, which outputs: " your choies is chrome color ".
+Color::bike():
+
+Calls the bike() method from the Bike class, which outputs: "ContinentalGT650 is a 648cc bike and its price is 425000.".
+
+Summary:
+Static Properties and Methods:
+
+Static properties and static methods belong to the class itself, not to any instance of the class. They are accessed using the :: operator.
+self:: is used within a class to access its own static properties and methods.
+Inheritance:
+
+The Color class inherits static properties and methods from the Bike class. Thus, it can call the bike() method from the Bike class and access static properties of Bike.
+Accessing Static Properties and Methods:
+
+self::: Refers to static properties and methods within the same class.
+static::: (Not used here but worth noting) Can be used in the context of late static bindings to refer to the class that was called.
+Explanation of $this vs. self:
+$this:
+
+Used to refer to the current instance of a class.
+Applicable in instance methods (non-static methods) to access instance properties and methods.
+self:
+
+Used to refer to the current class itself, not an instance.
+Applicable in static methods or when accessing static properties and methods. It helps to access static members of the class.

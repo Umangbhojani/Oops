@@ -1,0 +1,114 @@
+1.Class_define:
+
+
+1.Class Definition (Bike):
+
+The Bike class has three public properties:
+$bikename: The name of the bike, set to 'continatalGT650'.
+$price: The price of the bike, set to '425000'.
+$enginecc: The engine displacement of the bike, set to '648cc'.
+These properties are public, meaning they can be accessed from outside the class.
+
+2.Method Definition (display()):
+
+The display() method is a public method inside the Bike class.
+This method returns a string that describes the bike using the values of the $bikename, $enginecc, and $price properties.
+The method concatenates these properties into a sentence that reads: "continatalGT650 is 648cc bike and its price is 425000."
+
+3.Object Instantiation:
+
+An object of the Bike class is created using $bike = new Bike;.
+This instantiation process creates an instance of the Bike class, allowing you to interact with the properties and methods defined in the class.
+
+4.Method Invocation:
+
+The display() method is called on the $bike object using echo $bike->display();.
+This call outputs the string returned by the display() method, which describes the bike: "continatalGT650 is 648cc bike and its price is 425000."
+
+
+
+=====================================================================================================================================================================================================
+
+
+2.Private_class_define:
+
+
+Class Definition (Car):
+The Car class has three private properties:
+
+$name: The name of the car, set to 'RANGE ROVER VELAR'.
+$enginecc: The engine capacity of the car, set to '1997cc'.
+$price: The price of the car, set to '8700000'.
+These properties are marked as private, meaning they cannot be accessed directly from outside the class. They can only be accessed within the class methods.
+
+2. Method Definition (getCar()):
+The class defines a public method getCar(), but it doesn't do anything because it's empty. This method currently has no functionality.
+
+3. Method Definition (Car()):
+The class also defines another public method named Car().
+This method returns a string that describes the car using the values of the $name, $enginecc, and $price properties.
+The string it constructs reads: "RANGE ROVER VELAR is 1997cc car and its price is 8700000."
+
+4. Object Instantiation:
+An object of the Car class is created using $car = new Car;.
+This creates an instance of the Car class, which allows you to interact with the properties and methods of the class.
+
+5. Method Invocation:
+The Car() method is invoked on the $car object using echo $car->Car();.
+This call outputs the string returned by the Car() method, which describes the car: "RANGE ROVER VELAR is 1997cc car and its price is 8700000."
+
+=====================================================================================================================================================================================================
+
+
+3.Protected_class_define:
+
+
+1. Class Definition (Suv):
+The Suv class has three protected properties:
+
+$name: The name of the SUV, set to 'Defender'.
+$enginecc: The engine capacity of the SUV, set to '2997cc'.
+$price: The price of the SUV, set to '1.5cr' (1.5 crore).
+These properties are marked as protected, which means they can only be accessed within the class itself and by any class that inherits from Suv. They are not accessible directly from outside the class or by instances of the class.
+
+2. Method Definition (getSuv()):
+The getSuv() method is defined but currently does nothing because it is empty. It is likely a placeholder for future functionality.
+
+3. Method Definition (Suv()):
+The class also defines a public method named Suv().
+This method returns a string that describes the SUV using the values of the $name, $enginecc, and $price properties.
+The string it constructs reads: "Defender is 2997cc car and its price is 1.5cr."
+
+4. Object Instantiation:
+An object of the Suv class is created using $suv = new Suv;.
+This creates an instance of the Suv class, allowing you to interact with the properties and methods defined in the class.
+
+5. Method Invocation:
+The Suv() method is invoked on the $suv object using echo $suv->Suv();.
+This call outputs the string returned by the Suv() method, which describes the SUV: "Defender is 2997cc car and its price is 1.5cr."
+
+==============================================================================================================================================================================================================
+
+
+4.Public_class_define:
+
+
+1. Class Definition (Bike):
+The Bike class has three public properties:
+$bikename: Represents the name of the bike, set to 'continatalGT650'.
+$price: Represents the price of the bike, set to '425000'.
+$enginecc: Represents the engine capacity of the bike, set to '648cc'.
+These properties are marked as public, meaning they can be accessed from outside the class and by any instance of the class.
+
+2. Method Definition (display()):
+The display() method is a public method within the Bike class.
+This method returns a string that describes the bike using the values of the $bikename, $enginecc, and $price properties.
+The constructed string reads: "continatalGT650 is 648cc bike and its price is 425000."
+
+3. Object Instantiation:
+An object of the Bike class is created using $bike = new Bike;.
+This creates an instance of the Bike class, allowing you to interact with its properties and methods.
+
+4. Method Invocation:
+The display() method is called on the $bike object using echo $bike->display();.
+This outputs the string returned by the display() method, which describes the bike: "continatalGT650 is 648cc bike and its price is 425000."
